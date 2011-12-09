@@ -50,6 +50,10 @@ def runQuery(query):
 
 
 def getXML(URL):
+    """ 
+    Function that downloads xml from a given URL, and then parses it, and
+    returns the parsed tree.
+    """
     try:
         sock = urllib.urlopen(URL)
     except (IOError, OSError):
@@ -62,6 +66,11 @@ def getXML(URL):
 
 #Function currently unused.
 def makebookURL(ISBN,source):
+    """
+    INPUT: ISBN and name of lookup location
+    OUTPUT: URL specific to the book that contains (hopefully) a full set of 
+    info about the book
+    """
     if "goodreads" in source:
         api_key = config.get('alexandria', 'goodreads_key')
         baseURL = "http://www.goodreads.com/search/index.xml?key=" + api_key + "&q="
@@ -98,10 +107,8 @@ def addbooktodb(bookauthor,booktitle,bookISBN,bookpubdate):
 
 def addauthortodb(author):
 	"""
-	Takes as arguments a string (authorname) and a 1/0 (checkauthor)
-	will be performed
-	Function returns 0 if no author added to database
-	If author has been added the function will return BookAuthorID in the tblBookAuthor for the 
+	Takes as arguments a string (authorname)
+	The function will return BookAuthorID in the tblBookAuthor for the 
 	author just added.  This will be an integer.
 	"""
 	if debug: print " running addauthortodb"
@@ -112,7 +119,6 @@ def addauthortodb(author):
 	if debug: print "author_id is %s" % (author_id)
 	if debug: print type(author_id)
 	return author_id
-
 
 
 def checkbookisindb(ISBN):
@@ -159,6 +165,7 @@ def checkauthorisindb(author):
 	else:
 		#author is not already in database
 		return 0
+
 
 def getauthorid(author):
 	"""
