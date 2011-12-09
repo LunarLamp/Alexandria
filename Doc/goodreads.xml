@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+  <Request>
+    <authentication>true</authentication>
+      <key><![CDATA[scrv8PefEfu3A2OdQKIYQ]]></key>
+    <method><![CDATA[search_index]]></method>
+  </Request>
+  <search>
+  <query><![CDATA[0099410214]]></query>
+  
+  <results-start>1</results-start>
+  <results-end>1</results-end>
+  <total-results>1</total-results>
+  <source>Goodreads</source>
+  <query-time-seconds>0.00</query-time-seconds>
+  <results>
+		
+		  		    		  
+  		  		  		  		  
+      <work>
+  <books_count type="integer">82</books_count>
+  <id type="integer">1022176</id>
+  <original_publication_day type="integer" nil="true"></original_publication_day>
+  <original_publication_month type="integer" nil="true"></original_publication_month>
+  <original_publication_year type="integer">1996</original_publication_year>
+  <ratings_count type="integer">30127</ratings_count>
+  <text_reviews_count type="integer">641</text_reviews_count>
+  <average_rating>3.66</average_rating>
+  <best_book>
+    <id type="integer">832622</id>
+    <title>The Runaway Jury</title>
+    <author>
+      <id type="integer">721</id>
+      <name>John Grisham</name>
+    </author>
+    <image_url>http://photo.goodreads.com/books/1178752661m/832622.jpg</image_url>
+    <small_image_url>http://photo.goodreads.com/books/1178752661s/832622.jpg</small_image_url>
+  </best_book>
+</work>
+
+    
+  </results>
+  
+</search>
+
+</GoodreadsResponse>

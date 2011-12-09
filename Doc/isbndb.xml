@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ISBNdb server_time="2011-07-12T21:21:05Z">
+<BookList total_results="1" page_size="10" page_number="1" shown_results="1">
+<BookData book_id="never_let_me_go_a17" isbn="0571258093" isbn13="9780571258093">
+<Title>Never Let Me Go</Title>
+<TitleLong></TitleLong>
+<AuthorsText></AuthorsText>
+<PublisherText publisher_id="faber_and_faber">Faber and Faber</PublisherText>
+</BookData>
+</BookList>
+</ISBNdb>
