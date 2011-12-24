@@ -1,5 +1,3 @@
- - put api key in config file
- - make data be put into database
  - barcode2isbn should support more barcode/isbn formats
   - do proper checking where possible
  - make sure whitespace conforms to python norms
@@ -9,3 +7,4 @@
  + change database to innodb
  - make author names unique
  - add foreign key constraints to db
+ - deal with old books (The Prince, published in 1515 raises a warning when inserted, and puts year as 0000)
