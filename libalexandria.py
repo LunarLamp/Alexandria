@@ -71,6 +71,10 @@ def runQueryWrite(query):
     
 
 def getXML(URL):
+    """ 
+    Function that downloads xml from a given URL, and then parses it, and
+    returns the parsed tree.
+    """
     try:
         sock = urllib.urlopen(URL)
     except (IOError, OSError):
@@ -83,6 +87,11 @@ def getXML(URL):
 
 #Function currently unused.
 def makebookURL(ISBN,source):
+    """
+    INPUT: ISBN and name of lookup location
+    OUTPUT: URL specific to the book that contains (hopefully) a full set of 
+    info about the book
+    """
     if "goodreads" in source:
         api_key = config.get('alexandria', 'goodreads_key')
         baseURL = "http://www.goodreads.com/search/index.xml?key=" + api_key + "&q="
@@ -144,7 +153,6 @@ def addauthortodb(author):
     return author_id
 
 
-
 def checkbookisindb(ISBN):
     """
     Check to see if a book is already in the database. 
@@ -189,6 +197,7 @@ def checkauthorisindb(author):
     else:
         #author is not already in database
         return 0
+
 
 def getauthorid(author):
     """
