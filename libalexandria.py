@@ -124,9 +124,7 @@ def addbooktodb(bookauthor,booktitle,bookISBN,bookpubdate):
         query = 'INSERT INTO tblBook (BookID,BookAuthorID,BookTitle,BookISBN,BookPubDate) VALUES (NULL,%s,"%s",%s,%s);' % (authorid,booktitle,bookISBN,bookpubdate)
         if debug: print query
         runQueryWrite(query)
-        print "Book should be added to the database now! But there's no error checking, so it's probably not"
-        print " "
-        print " "
+        print "Book should be added to the database now!"   #but, let's be honest, it really might not have been...
 
 
 def addauthortodb(author):

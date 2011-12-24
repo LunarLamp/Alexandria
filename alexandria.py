@@ -82,3 +82,7 @@ while 1:
         #TODO: handle the case where we do not have all of this info!
         if ( name != None ) & ( title != None ) & ( ISBN != None ) & ( pub_year != None ):
             alex.addbooktodb(name,title,ISBN,pub_year)
+
+        print " "
+        print " "
+        print "============================================"
