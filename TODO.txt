@@ -1,4 +1,3 @@
- - make data be put into database
  - barcode2isbn should support more barcode/isbn formats
   - do proper checking where possible
  - make sure whitespace conforms to python norms
@@ -7,3 +6,6 @@
  - make author names unique
  - add foreign key constraints to db
  - deal with old books (The Prince, published in 1515 raises a warning when inserted, and puts year as 0000)
+ - use some of the information given by the API that is currently ignored
+ - build a django front-end for viewing the data held
+	- particularly use this for front covers!
