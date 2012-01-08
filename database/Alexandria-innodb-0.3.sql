@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.58, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: Library
+-- Host: localhost    Database: Alexandria
 -- ------------------------------------------------------
 -- Server version	5.1.58-1ubuntu1
 
@@ -65,6 +65,30 @@ CREATE TABLE `tblBookAuthor` (
 LOCK TABLES `tblBookAuthor` WRITE;
 /*!40000 ALTER TABLE `tblBookAuthor` DISABLE KEYS */;
 /*!40000 ALTER TABLE `tblBookAuthor` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tblBookCover`
+--
+
+DROP TABLE IF EXISTS `tblBookCover`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tblBookCover` (
+  `BookCoverID` int(11) NOT NULL AUTO_INCREMENT,
+  `BookCoverImage` blob,
+  `BookCoverExt` varchar(4) DEFAULT NULL,
+  PRIMARY KEY (`BookCoverID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tblBookCover`
+--
+
+LOCK TABLES `tblBookCover` WRITE;
+/*!40000 ALTER TABLE `tblBookCover` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tblBookCover` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -323,4 +347,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-10-20 14:21:36
+-- Dump completed on 2012-01-08 19:15:10
