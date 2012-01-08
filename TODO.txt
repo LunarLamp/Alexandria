@@ -10,3 +10,6 @@
  - build a django front-end for viewing the data held
 	- particularly use this for front covers!
  - Add image locations to the database, rather than just leave stranded on disk
+ - Check/allow selection of booktype (paperback, hardback etc)
+ - Deal with barcodes that when scanned gives old and new style barcode
+ - Deal with someone pressing "enter" rather than giving any content for ISBN entry
