@@ -207,3 +207,21 @@ def getauthorid(author):
     if debug: print "authorid = %s" % (authorid)
     return authorid
     
+
+def downloadimage(ISBN,url):
+    """
+    Downloads the image located at the given URL, and stores it in a filename
+    of ISBN.jpg
+    Improvements:
+        - validate image
+        - pick an appropriate extension based on the image type
+    """
+    
+
+    imagedir = config.get('alexandria', 'image_dir')
+    #create filename
+    filename = imagedir+str(ISBN)+'.jpg'
+
+    #download and store image 
+    urllib.urlretrieve(url,filename)
+

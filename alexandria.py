@@ -65,7 +65,10 @@ while 1:
                         #check if there is an image or not, by looking for string 'nocover' in returned URL
                         if "nocover" not in image_url:
                             if debug: print "The URL cover can be found at: %s" % (image_url)
-                            print "The URL cover can be found at: %s" % (image_url)
+                            print "Adding cover to collection!"
+                            if debug: print "Storing cover locally..."
+                            alex.downloadimage(ISBN,image_url)
+                            if debug: print "Cover stored locally point in code"
                         else:
                             if debug: print "No cover could be found for this book"
         elif book_database == "isbndb":
