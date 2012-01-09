@@ -6,7 +6,7 @@ import lxml.etree
 import ConfigParser
 
 
-debug = 1
+debug = 0
 
 config = ConfigParser.RawConfigParser()
 config.read('alexandria.conf')

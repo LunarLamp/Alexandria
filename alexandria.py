@@ -4,7 +4,7 @@ import ConfigParser
 import libalexandria as alex
 from xml.etree.ElementTree import ElementTree
 # Toggle line below to 1 or 0 to turn on or off debug.
-debug = 1
+debug = 0
 
 #Get config values
 config = ConfigParser.RawConfigParser()
