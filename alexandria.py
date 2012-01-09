@@ -11,10 +11,6 @@ config = ConfigParser.RawConfigParser()
 config.read('alexandria.conf')
 book_database = config.get('alexandria', 'book_database')
 
-
-#set ISBN to command line argument - temporary until scanning is integrated
-#ISBN = sys.argv[1]	# takes ISBN as arg1 one command line
-
 #initialise some variables with None that we will use later
 barcode = None
 ISBN = None
@@ -42,22 +38,18 @@ while 1:
                 if element.tag == "original_publication_year":
                     if element.text:
                         pub_year = element.text
-                        if debug: print "pub year is: %s" % (pub_year)
                         print "pub year is: %s" % (pub_year)
                 if element.tag == "average_rating":
                     if element.text:
                         avg_rat = element.text
-                        if debug: print "average rating is: %s" % (avg_rat)
                         print "average rating is: %s" % (avg_rat)
                 if element.tag == "title":
                     if element.text:
                         title = element.text
-                        if debug: print "title is: %s" % (title)
                         print "title is: %s" % (title)
                 if element.tag == "name":
                     if element.text:
                         name = element.text
-                        if debug: print "author is: %s" % (name)
                         print "author is: %s" % (name)
                 if element.tag == "image_url":
                     if element.text:
