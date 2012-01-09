@@ -215,13 +215,13 @@ def downloadimage(ISBN,url):
     Improvements:
         - validate image
         - pick an appropriate extension based on the image type
+        - add location of image to database
     """
     
 
     imagedir = config.get('alexandria', 'image_dir')
     #create filename
     filename = imagedir+str(ISBN)+'.jpg'
-
     #download and store image 
     urllib.urlretrieve(url,filename)
 

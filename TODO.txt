@@ -13,3 +13,4 @@
  - Check/allow selection of booktype (paperback, hardback etc)
  - Deal with barcodes that when scanned gives old and new style barcode
  - Deal with someone pressing "enter" rather than giving any content for ISBN entry
+ - Allow debugging by a flag, and not by a hardcoded value in the script
