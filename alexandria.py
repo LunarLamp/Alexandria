@@ -32,8 +32,12 @@ while 1:
         #Declare the root of the xml tree
         root = ElementTree(alex.getXML(apiURL))
         iter = root.getiterator()
+        #item.getElementsByTagName ??
         #iterate over elements in the xml tree
         if book_database == "goodreads":
+
+            #foo = root.getElementsByTagName(original_publication_year)
+            #print foo
             for element in iter:
                 if element.tag == "original_publication_year":
                     if element.text:

@@ -1,3 +1,4 @@
+PRIORITISE THESE TASKS
  - barcode2isbn should support more barcode/isbn formats
   - do proper checking where possible
  - make sure whitespace conforms to python norms
@@ -15,3 +16,5 @@
  - Deal with someone pressing "enter" rather than giving any content for ISBN entry
  - Allow debugging by a flag, and not by a hardcoded value in the script
  - Remove import sys from alexandria.py
+ - Make properly OO; should be able to create a book object simply.
+ - Make a django app
