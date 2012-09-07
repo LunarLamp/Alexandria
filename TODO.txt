@@ -1,15 +1,12 @@
 PRIORITISE THESE TASKS
  - barcode2isbn should support more barcode/isbn formats
   - do proper checking where possible
- - make sure whitespace conforms to python norms
  - properly comment functions
  - extend xml parsing
  - make author names unique
  - add foreign key constraints to db
- - deal with old books (The Prince, published in 1515 raises a warning when inserted, and puts year as 0000)
+ - deal with old books (Current, the Prince, published in 1515 raises a warning when inserted, and puts year as 0000)
  - use some of the information given by the API that is currently ignored
- - build a django front-end for viewing the data held
-	- particularly use this for front covers!
  - Add image locations to the database, rather than just leave stranded on disk
  - Check/allow selection of booktype (paperback, hardback etc)
  - Deal with barcodes that when scanned gives old and new style barcode
